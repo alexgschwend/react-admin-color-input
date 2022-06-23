@@ -1,4 +1,4 @@
-# `<ColorInput> and <ColorField> compatible with react-admin v4`
+# `<ColorInput>` and `<ColorField>` compatible with react-admin v4
 
 A color picker for [react-admin](https://github.com/marmelab/react-admin) (v4) using [React Color](http://casesandberg.github.io/react-color/), a collection of color pickers.
 
