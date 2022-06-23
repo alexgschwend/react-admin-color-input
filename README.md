@@ -1,4 +1,4 @@
-# `<ColorInput> and <ColorField>`
+# `<ColorInput> and <ColorField> compatible with react-admin v4`
 
 A color picker for [react-admin](https://github.com/marmelab/react-admin) (v4) using [React Color](http://casesandberg.github.io/react-color/), a collection of color pickers.
 
@@ -15,7 +15,7 @@ This module was originally created for [admin-on-rest](https://github.com/marmel
 ## Installation
 
 ```sh
-npm install react-admin-color-input --save-dev
+npm install react-admin-color-picker --save-dev
 ```
 
 ## Usage

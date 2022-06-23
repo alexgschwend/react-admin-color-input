@@ -1,5 +1,5 @@
 {
-  "name": "react-admin-color-input",
+  "name": "react-admin-color-picker",
   "version": "1.0.0",
   "description": "<ColorInput> and <ColorField> components for react-admin (v4). Forked from vascofg/react-admin-color-input.",
   "main": "lib/index.js",
@@ -8,7 +8,7 @@
   "files": [
     "/lib"
   ],
-  "repository": "https://github.com/alexgschwend/react-admin-color-input.git",
+  "repository": "https://github.com/alexgschwend/react-admin-color-picker.git",
   "author": "Alexander Gschwend",
   "license": "MIT",
   "devDependencies": {
