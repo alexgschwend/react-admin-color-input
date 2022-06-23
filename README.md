@@ -10,14 +10,17 @@ Also includes a color field for just displaying the color value.
 
 ## Notice
 
-This module was originally created for [admin-on-rest](https://github.com/marmelab/admin-on-rest) by @dreinke and was forked from his [repository](https://github.com/dreinke/aor-color-input).
+This module was originally created for [admin-on-rest](https://github.com/marmelab/admin-on-rest) by @dreinke and was forked from his [repository](https://github.com/dreinke/aor-color-input) and this [repository](https://github.com/vascofg/react-admin-color-input).
 
 ## Installation
 
 ```sh
-npm install react-admin-color-picker --save-dev
+npm install react-admin-color-picker
 ```
-
+or 
+```sh
+yarn add react-admin-color-picker
+```
 ## Usage
 
 ```js
