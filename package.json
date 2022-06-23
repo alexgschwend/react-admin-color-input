@@ -1,14 +1,28 @@
 {
   "name": "react-admin-color-picker",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "<ColorInput> and <ColorField> components for react-admin (v4). Forked from vascofg/react-admin-color-input.",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
   "types": "lib/index.d.ts",
   "files": [
-    "/lib"
+    "LICENSE",
+    "*.md",
+    "lib"
   ],
   "repository": "https://github.com/alexgschwend/react-admin-color-picker.git",
+  "keywords": [
+    "reactjs",
+    "rest",
+    "react",
+    "color",
+    "picker",
+    "html"
+  ],
+  "bugs": {
+    "url": "https://github.com/alexgschwend/react-admin-color-picker/issues"
+  },
+  "homepage": "https://github.com/alexgschwend/react-admin-color-picker#readme",
   "author": "Alexander Gschwend",
   "license": "MIT",
   "devDependencies": {
