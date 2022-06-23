@@ -1,53 +1,33 @@
 {
   "name": "react-admin-color-input",
-  "version": "1.0.9",
-  "description": "<ColorInput> and <ColorField> components for react-admin. Forked from aor-color-input.",
-  "main": "lib/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "files": [
-    "LICENSE",
-    "*.md",
-    "lib",
-    "src"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vascofg/react-admin-color-input.git"
-  },
-  "keywords": [
-    "reactjs",
-    "rest",
-    "react",
-    "color",
-    "picker",
-    "html"
-  ],
-  "author": "Vasco Gonçalves",
+  "version": "1.0.0",
+  "description": "<ColorInput> and <ColorField> components for react-admin (v4). Forked from vascofg/react-admin-color-input.",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "types": "./lib/esm/index.d.ts",
+  "repository": "https://github.com/alexgschwend/react-admin-color-input.git",
+  "author": "Alexander Gschwend",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/vascofg/react-admin-color-input/issues"
-  },
-  "homepage": "https://github.com/vascofg/react-admin-color-input#readme",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-plugin-transform-react-jsx": "^6.8.0",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.16.0",
-    "babel-preset-stage-0": "^6.16.0"
+    "@mui/material": "^5.8.5",
+    "@types/lodash": "^4.14.182",
+    "@types/react": "^18.0.14",
+    "@types/react-color": "^3.0.6",
+    "ra-core": "^4.1.5",
+    "react": "^18.2.0",
+    "typescript": "^4.7.4"
+  },
+  "scripts": {
+    "build": "yarn build:esm && yarn build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir lib/cjs"
   },
   "peerDependencies": {
-    "ra-core": "^2.0.2",
-    "react": "^16.3.0",
-    "prop-types": "^15.6.0"
+    "ra-core": "^4.1.5",
+    "react": "^18.1.0"
   },
   "dependencies": {
-    "inflection": "^1.12.0",
     "lodash.get": "^4.4.2",
-    "react-color": "^2.14.1",
-    "@material-ui/core": "^1.0.0",
-    "recompose": "^0.27.1"
+    "react-color": "^2.19.3"
   }
 }

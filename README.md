@@ -1,6 +1,6 @@
 # `<ColorInput> and <ColorField>`
 
-A color picker for [react-admin](https://github.com/marmelab/react-admin) using [React Color](http://casesandberg.github.io/react-color/), a collection of color pickers.
+A color picker for [react-admin](https://github.com/marmelab/react-admin) (v4) using [React Color](http://casesandberg.github.io/react-color/), a collection of color pickers.
 
 ![color-input.gif](color-input.gif)
 
@@ -21,7 +21,6 @@ npm install react-admin-color-input --save-dev
 ## Usage
 
 ```js
-import React from 'react';
 import {
     Show,
     TextField,
@@ -32,18 +31,18 @@ import {
 
 import { ColorField, ColorInput } from 'react-admin-color-input';
 
-export const PostShow = (props) => (
-    <Show {...props}>
+export const PostShow = () => (
+    <Show>
         <TextField source="title" />
         <TextField source="body" />
         <ColorField source="color" />
     </Edit>
 );
 
-export const PostEdit = (props) => (
-    <Edit {...props}>
-        <TextInput source="title" validation={{ required: true }} />
-        <LongTextInput source="body" validation={{ required: true }} />
+export const PostEdit = () => (
+    <Edit>
+        <TextInput source="title" validate={[required()]} />
+        <LongTextInput source="body" validate={[required()]} />
         <ColorInput source="color" />
     </Edit>
 );
