@@ -32,7 +32,7 @@ import {
     LongTextInput,
 } from 'react-admin';
 
-import { ColorField, ColorInput } from 'react-admin-color-input';
+import { ColorField, ColorInput } from 'react-admin-color-picker';
 
 export const PostShow = () => (
     <Show>
