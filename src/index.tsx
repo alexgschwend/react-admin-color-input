@@ -32,7 +32,7 @@ export const ColorField = ({ source, className }: ColorFieldProps) => {
 
 interface ColorInputProps {
   resource?: string
-  label: string
+  label?: string
   options?: {
     disableAlpha: true
   }
