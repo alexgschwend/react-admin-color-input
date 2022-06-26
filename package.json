@@ -1,6 +1,6 @@
 {
   "name": "react-admin-color-picker",
-  "version": "1.0.3-beta.2",
+  "version": "1.0.3",
   "description": "<ColorInput> and <ColorField> components for react-admin (v4). Forked from vascofg/react-admin-color-input.",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
