@@ -101,7 +101,7 @@ export const ColorInput = (props: ColorInputProps) => {
         onFocus={handleOpen}
         label={<FieldTitle label={label} source={source} resource={resource} isRequired={isRequired} />}
         error={!!(isTouched && error)}
-        helperText={helperText}
+        helperText={isTouched && error?.message ? error.message : helperText}
         className={className}
       />
       {show ? (
