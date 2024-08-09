@@ -3,7 +3,6 @@ import get from 'lodash/get'
 import { FieldTitle, useInput, useRecordContext, Validator } from 'ra-core'
 import { useState } from 'react'
 import * as ReactColor from 'react-color'
-import './ColorInput.css'
 
 interface ColorFieldProps {
   source: string
@@ -105,9 +104,18 @@ export const ColorInput = (props: ColorInputProps) => {
         className={className}
       />
       {show ? (
-        <div className="ColorInput-popup">
+        <div className="ColorInput-popup" style={{
+          position: 'absolute',
+          zIndex: 2,
+        }}>
           {/* eslint-disable-next-line */}
-          <div className="ColorInput-cover" onClick={handleClose} />
+          <div className="ColorInput-cover" onClick={handleClose} style={{
+            position: 'fixed',
+            top: 0,
+            bottom: 0,
+            left: 0,
+            right: 0,
+          }} />
           {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
           {/* @ts-ignore */}
           <Picker {...options} color={field.value} onChange={handleChange} />
